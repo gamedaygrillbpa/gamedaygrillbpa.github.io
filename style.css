@@ -104,11 +104,11 @@ nav li{
 }
 
 .specialBanner{
-  background-image: url("images/twoRowFiller.jpeg");
+  background-image: url("twoRowFiller.jpeg");
   height:310px;
 }
 .bannerFill{
-  background-image: url("images/FillerBannerLight.jpeg");
+  background-image: url("FillerBannerLight.jpeg");
   height:480px;
 }
 .homeOrder{
