@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Day Grill | Menu</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<!-- list of sources: 
+  -https://www.youtube.com/watch?v=yE9DLIoDwCg (responsive nav bar)
+  -https://www.youtube.com/watch?v=p3_xN2Zp1TY
+  -->
+</head>
+<body>
+  <!-- nav bar --> 
+  <header>
+    <!-- side bar -->
+    <div class="sideBar">
+      <i class="fa-solid fa-xmark close-cart pr-5 pt-5"></i>
+      <h2 class="cart-title pl-10  py-10 subheading">My Order & Reservation</h2>
+      <!-- contents -->
+      <div class="cart-content pl-10">
+
+      </div>
+
+        <!-- total --> 
+        <div class="total">
+          <div class="total-title font-bold">Total</div>
+          <div class="total-price pr-5">$0</div>
+        </div>
+        <form class="pl-10">
+          <label for="rName" class="font-semibold">Reservation Name:</label>
+          <input type="text" id="rName" name="rName" class=" border-2"> <br>
+          <label for="phone" class="font-semibold"> Phone Number:</label>
+          <input type="text" id="phone" name="phone" class=" border-2"> <br>
+          <label for="size" class="font-semibold">Party Size:</label><br>
+          <input type="number" id="size" name="size"  value="" class=" border-2">
+          <br>
+          <label for="time" class="font-semibold">Time:</label><br>
+          <input type="text" id="time" name="time"  value="" class=" border-2">
+          <br>
+          <label for="notes" class="font-semibold">Order Notes:</label>
+          <br>
+          <input type="text" id="notes" name="notes"  value="" class=" border-2">
+        </form>
+        <button type="button" class=" py-2 px-4 rounded text-amber-950 hover:text-white hover:bg-amber-950" id="reserveBtn"><a href="reserved.html">Place Reservation</a></button>
+
+    </div>
+    <!-- side bar --> 
+    <nav>
+      <ul class="sidepanel">
+        <i class="fa-solid fa-xmark  pr-5 pt-5" id="close"></i>
+        <li class="uppercase hover:font-bold"><a href="index.html">home</a></li>
+        <li class="uppercase font-bold"><a href="menu.html">menu</a></li>
+        <li class="uppercase hover:font-bold"><a href="cater.html">cater</a></li>
+        <li class="uppercase hover:font-bold"><a href="faq.html">faqs</a></li>
+        <li class="uppercase hover:font-bold"><a href="career.html">career</a></li>
+      </ul>
+
+      <ul>
+        <li class="uppercase" id="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="index.html">home</a></li>
+        <li class="uppercase font-bold tooSmall"><a href="#">menu</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="cater.html">cater</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="#">faqs</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="career.html">career</a></li>
+        <i class="fa-solid fa-cart-shopping pr-5" id="cart"></i>
+        <i class="fa-solid fa-bars tooBig" id="option" ></i>
+      </ul>
+    </nav>
+
+  </header>
+<!-- end of nav bar --> 
+
+
+
+  <!-- section of grids --> 
+  
+  <section class="">
+     
+    
+    <div class="menuHeading">
+      <div class="flex place-items-center footballs">
+        <img src="images/Football2.jpg" id="footballLeft">
+        <div>
+        <h1 class=" text-5xl uppercase pt-5 text-center heading1">Menu</h1>
+        <p class="text-center italic py-2 text-lg text-zinc-400">Ordering Ahead is only applicable for parties from 5 to 10 people.</p>
+        </div>
+        <img src="images/Football2.jpg" id="footballRight">
+      </div>
+    <!--nav--> 
+    <ul class="menuNav place-items-center flex pb-5">
+      <li class="hover:font-bold" id="drinkNav">Drinks</li>
+      <li class="hover:font-bold" id="sideNav">Sides</li>
+      <li class="hover:font-bold" id="sandwichNav">Sandwiches</li>
+      <li class="hover:font-bold" id="meatNav">Meat Platters</li>
+      <li class="hover:font-bold" id="dessertNav">Desserts</li>
+    </ul>
+    </div>
+    <!-- drinks grid --> 
+    <br>
+    <h2 class="text-3xl uppercase text-center subheading" id="drinkHead">Delicious Drinks</h2>
+    <br>
+    <div class="drinkCards pl-10 ">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/10580223/pexels-photo-10580223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Tropical Berry Burst</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1772974/pexels-photo-1772974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Mango Tango</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Peachy Pinapple Paradise</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/10927827/pexels-photo-10927827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Kiwi Kiss</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2110927/pexels-photo-2110927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Boxing Berry Blend</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="drink image">
+        <p class="font-bold food-title">Lemon Melon Slam Dunk</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+    </div>
+
+    <!-- sides grid --> 
+    <br>
+    <h2 class="text-3xl uppercase text-center subheading" id="sideHead">Stadium Styled Sides</h2>
+      <br>
+    <div class="sidesCards pl-10">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4181933/pexels-photo-4181933.jpeg" alt="onion rings">
+        <p class="font-bold food-title">Onion Rings</p>
+        <span class="price">$8.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="french fries">
+        <p class="font-bold food-title">French Fries</p>
+        <span class="price">$8.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/12557603/pexels-photo-12557603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="loaded nachos">
+        <p class="font-bold food-title">Loaded Nacho Knockout</p>
+        <span class="price">$9.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/03/38/52/90/1000_F_338529054_yq3eAgmXDKKXtcGzATwJ1lm62ECIYTGM.jpg" alt="tater tots">
+        <p class="font-bold food-title">Touchdown Tater Tots</p>
+        <span class="price">$6.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/10993148/pexels-photo-10993148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mac n cheese">
+        <p class="font-bold food-title">Home Run Mac n Cheese</p>
+        <span class="price">$7.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/13062441/pexels-photo-13062441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="garlic bread">
+        <p class="font-bold food-title">Grand Slam Garlic Bread</p>
+        <span class="price">$7.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+    </div>
+    <!--Sandwhiches-->
+    <br>
+    <h2 class="text-3xl uppercase text-center subheading" id="sandwichHead">All-Star Sandwiches</h2>
+    <br>
+    <div class="sandwichCards pl-10">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/10654301/pexels-photo-10654301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="guacomole burger">
+        <p class="font-bold food-title">Grand Slam Guacomole Burger (V)</p>
+        <span class="price">$15.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1603899/pexels-photo-1603899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="teriyaki sub">
+        <p class="font-bold food-title">Touchdown Teriyaki Sub</p>
+        <span class="price">$15.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1563045/pexels-photo-1563045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="rumble bison burger">
+        <p class="font-bold food-title">Home Win Burger</p>
+        <span class="price">$19.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1239347/pexels-photo-1239347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="swiss panini">
+        <p class="font-bold food-title">MVP Swiss Chicken Pannini</p>
+        <span class="price">$15.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/8230019/pexels-photo-8230019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="fish tacos">
+        <p class="font-bold food-title">Kick-Off Fish Tacos</p>
+        <span class="price">$15.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/14979836/pexels-photo-14979836/free-photo-of-burrito-in-close-up-photography.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gouda mushroom wrap">
+        <p class="font-bold food-title">All-Star Gouda Mushroom Wrap (V)</p>
+        <span class="price">$15.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+    </div>
+    <!--meat platters-->
+    <br>
+    <h2 class="text-3xl uppercase text-center subheading" id="meatHead">Team-Sized Meats</h2>
+    <br>
+    <div class="meatCards pl-10">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/13644015/pexels-photo-13644015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="steak plate">
+        <p class="font-bold food-title">Game Day Grilled Steak</p>
+        <span class="price">$20.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/03/76/35/28/1000_F_376352886_1VDlB6WfdFffXR0adZVVawq428hjml9e.jpg" alt="brisket">
+        <p class="font-bold food-title">BBQ Brisket Feast</p>
+        <span class="price">$22.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/46/79/66/1000_F_246796673_CAyc5vf2YBtB2NDIHr1Up0T0ODHn92kB.jpg" alt="chicken wings">
+        <p class="font-bold food-title">Spicy Teriyaki Tailgate Wings</p>
+        <span class="price">$18.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="images/seafood.png" alt="seafood platter">
+        <p class="font-bold food-title">Seafood Sports Plate</p>
+        <span class="price">$21.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div><div class="card">
+        <img src="images/chicken.png" alt="fried chicken">
+        <p class="font-bold food-title">Champion's Fried Crispy Chicken</p>
+        <span class="price">$18.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="images/smoked.png" alt="smoked meat platter">
+        <p class="font-bold food-title">Smoked Mixed Grill Platter</p>
+        <span class="price">$25.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+    </div>
+    <!-- desserts cards -->
+    <br>
+      <h2 class="text-3xl uppercase text-center subheading" id="dessertHead">Sweet, Sweet Victory Desserts</h2>
+    <br>
+    <div class="dessertCards pl-10">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="red white blueberry pie">
+        <p class="font-bold food-title">Red White Blueberry Pie Slice</p>
+        <span class="price">$13.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/6025811/pexels-photo-6025811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="hot fudge sundae">
+        <p class="font-bold food-title">Home Run Hot Fudge Sundae</p>
+        <span class="price">$10.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7491915/pexels-photo-7491915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="brownies">
+        <p class="font-bold food-title">Batter Up Brownies</p>
+        <span class="price">$11.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/06/78/83/52/1000_F_678835275_dAD00iLse2QuQO4JdVa0wLpZk8J5CuX6.jpg" alt="root beer float">
+        <p class="font-bold food-title">Rootbeer Float Slam Dunks</p>
+        <span class="price">$10.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="images/matcha.png" alt="matcha cookies">
+        <p class="font-bold food-title">MVP Matcha Cookies</p>
+        <span class="price">$7.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1366710/pexels-photo-1366710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="caramel cake slice">
+        <p class="font-bold food-title"> Hail Mary Caramel Cake Slice</p>
+        <span class="price">$9.00</span>
+        <i class="fa-solid fa-circle-plus add-cart"></i>
+      </div>
+    </div>
+  </section>
+  
+  <br class="">
+  <!-- end of section of grids --> 
+  <!-- footer --> 
+  <!-- footer --> 
+  <footer class=" pt-10">
+    <div class="infoFooter flex">
+      <div class="days ">
+        <ul>
+          <li class="font-bold">Business Hours:</li>
+          <li><span class="font-bold">Mon-Thurs:</span> 11:00 AM - 9:00 PM</li>
+          <li><span class="font-bold">Fri-Sat:</span> 11:00 AM - 12:00 PM</li>
+        </ul>
+      </div>
+      <div class="contact pl-5 pr-5">
+        <ul>
+          <li class="font-bold">Contact Us:</li>
+          <li> <i class="fa-solid fa-phone"></i> XXX-XXX-XXXX</li>
+          <li><i class="fa-solid fa-envelope"></i> customer@gamedaygrill.com</li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+
+          <li><i class="fa-brands fa-instagram"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-twitter"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-facebook"></i> @gamedaygrill</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ada flex">
+      <a href="ada.html">ADA Statement</a>
+    </div>
+    <p class="text-xs text-center pt-2">Designed by Melissa Ortiz, Asha Rountree & Developed by Imaan Dadabhoy 2023-2024.</p> 
+    <p class="text-xs text-center">Theme: Game Day Grill, Chapter 02-0905 James Bowie High School Austin TX.</p>
+  </footer>
+  <script src="menuscript.js"></script>
+</body>
+</html>

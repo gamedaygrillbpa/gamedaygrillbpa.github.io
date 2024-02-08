@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Day Grill | Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<!-- list of sources: 
+  -https://www.youtube.com/watch?v=yE9DLIoDwCg (responsive nav bar)
+  -https://www.youtube.com/watch?v=p3_xN2Zp1TY
+  -->
+</head>
+<body>
+   <!-- nav bar --> 
+    <header>
+
+      <!-- side bar --> 
+      <nav>
+        <ul class="sidepanel">
+          <i class="fa-solid fa-xmark  pr-5 pt-5" id="close"></i>
+          <li class="uppercase hover:font-bold"><a href="index.html">home</a></li>
+          <li class="uppercase hover:font-bold"><a href="menu.html">menu</a></li>
+          <li class="uppercase hover:font-bold"><a href="cater.html">cater</a></li>
+          <li class="uppercase hover:font-bold"><a href="faq.html">faqs</a></li>
+          <li class="uppercase hover:font-bold"><a href="career.html">career</a></li>
+        </ul>
+
+        <ul>
+          <li class="uppercase" id="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
+           <li class="uppercase font-bold tooSmall"><a href="index.html">home</a></li>
+          <li class="uppercase hover:font-bold tooSmall"><a href="menu.html">menu</a></li>
+          <li class="uppercase hover:font-bold tooSmall"><a href="cater.html">cater</a></li>
+          <li class="uppercase hover:font-bold tooSmall"><a href="faq.html">faqs</a></li>
+          <li class="uppercase hover:font-bold tooSmall"><a href="career.html">career</a></li>
+          <i class="fa-solid fa-bars tooBig" id="option" ></i>
+        </ul>
+      </nav>
+
+    </header>
+  <!-- end of nav bar --> 
+
+  <!-- body --> 
+  <section class="banner">
+    
+    <img src="images/COVER.JPEG" alt="Home Win Hamburger, monthly special for 19.99">
+  </section>
+  <br>
+  <section class="pb-10 pt-2">
+    <!-- our story -->
+    <p class="text-3xl pl-10  pb-2 subheading">Underdogs to Champions: Our Story</p>
+    <p class="font-light text-zinc-400 pl-10 pb-2">From the kitchen of the second floor apartment, to a booming local business.</p>
+    <p class="pl-10 pr-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+    <p class="pl-10 pr-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <br>
+  <!-- banenr section -->
+  <section>
+    <div class="banner specialBanner">
+      
+    </div>
+  </section>
+  <br>
+  <section class="highlights pt-10 pb-10">
+    <p class="text-center text-3xl subheading">Stadium Styled Satisfaction</p>
+    <p class="text-center description">Check out some of our fan favorites. </p>
+    <br>
+    <div class="cardHighlights pt-2">
+      <div class="card shadow-xl rounded-lg hover:shadow-2xl">
+        <br>
+         <img src="https://images.pexels.com/photos/12557603/pexels-photo-12557603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="loaded nachos" class="homeOrder">
+        <p class="text-center font-bold pt-2">Loaded Nacho Knockout</p>
+        <p class="text-center font-thin pt-2 text-zinc-500 px-1 pb-2">Crunchy, cheesy nachos that have you ordering seconds.</p>
+        <div class="pb-2"><button type="button" class=" py-2 px-4 hover:font-bold rounded  hover:bg-amber-950 hover:text-white cardBtn"><a href="menu.html">Order</a></button></div>
+      </div>
+      <div class="card shadow-xl rounded-lg hover:shadow-2xl">
+        <br>
+         <img src="https://as1.ftcdn.net/v2/jpg/02/46/79/66/1000_F_246796673_CAyc5vf2YBtB2NDIHr1Up0T0ODHn92kB.jpg" alt="chicken wings" alt="teriyaki wings" class="homeOrder">
+        <p class="text-center font-bold pt-2">Spicy Teriyaki Tailgate Wings</p>
+         <p class="text-center font-thin pt-2 text-zinc-500 pb-2">This basket of wings has you licking your fingers.</p>
+        <div class="pb-2"><button type="button" class=" py-2 px-4 hover:font-bold rounded  hover:bg-amber-950 hover:text-white cardBtn"><a href="menu.html">Order</a></button></div>
+      </div>
+      <div class="card shadow-xl rounded-lg hover:shadow-2xl">
+        <br>
+        <img src="https://images.pexels.com/photos/7491915/pexels-photo-7491915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="brownies" class="homeOrder">
+        <p class="text-center font-bold pt-2">Batter Up Brownies</p>
+         <p class="text-center font-thin pt-2 text-zinc-500 pb-2">Hot, fudgy brownies topped with good ole vanilla icecream.</p>
+        <div class="pb-2"><button type="button" class=" py-2 px-4 hover:font-bold rounded   hover:bg-amber-950 hover:text-white cardBtn"><a href="menu.html">Order</a></button></div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- banner section -->
+  <section>
+    <div class="banner specialBanner"></div>
+  </section>
+  <br>
+  <!-- cater section -->
+  <section class="pb-10 pt-2">
+    <div class="caterSection rounded-3xl text-white">
+      <p class="text-3xl text-center subheading pt-10"> Take Your Victories Everywhere</p>
+      <p class="text-center description">From weddings to watch-parties, enjoy our food anywhere.</p>
+      <img src="images/tenders.png" alt="chicken tender drawing" class="tenders py-5 px-10">
+     <div class="pb-5"> <button type="button" class="py-2 px-4 border-2 rounded-lg hover:text-black hover:bg-white caterBtn"><a href="cater.html">Explore Cater Options</a></button></div>
+    </div>
+    <br>
+  </section>
+  <!-- footer --> 
+  <footer class="footerSmall pt-10 px-5">
+    <div class="infoFooter flex px-5">
+      <div class="days ">
+        <ul>
+          <li class="font-bold">Business Hours:</li>
+          <li><span class="font-bold">Mon-Thurs:</span> 11:00 AM - 9:00 PM</li>
+          <li><span class="font-bold">Fri-Sat:</span> 11:00 AM - 12:00 AM</li>
+        </ul>
+      </div>
+      <div class="contact pl-5 pr-5">
+        <ul>
+          <li class="font-bold">Contact Us:</li>
+          <li> <i class="fa-solid fa-phone"></i> XXX-XXX-XXXX</li>
+          <li><i class="fa-solid fa-envelope"></i> customer@gamedaygrill.com</li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          
+          <li><i class="fa-brands fa-instagram"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-twitter"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-facebook"></i> @gamedaygrill</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ada flex">
+      <a href="ada.html">ADA Statement</a>
+    </div>
+    <p class="text-xs text-center pt-2">Designed by Melissa Ortiz, Asha Rountree & Developed by Imaan Dadabhoy 2023-2024.</p> 
+    <p class="text-xs text-center">Theme: Game Day Grill, Chapter 02-0905 James Bowie High School Austin TX.</p>
+  </footer>
+  <script src="menuscript.js"></script>
+</body>
+</html>

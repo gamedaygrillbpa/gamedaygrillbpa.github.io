@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Day Grill | Cater</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<!-- list of sources: 
+  -https://www.youtube.com/watch?v=yE9DLIoDwCg (responsive nav bar)
+  -https://www.youtube.com/watch?v=p3_xN2Zp1TY
+  -->
+</head>
+<body>
+ <!-- nav bar --> 
+  <header>
+
+    <!-- side bar --> 
+    <nav>
+      <ul class="sidepanel">
+        <i class="fa-solid fa-xmark  pr-5 pt-5" id="close"></i>
+        <li class="uppercase hover:font-bold"><a href="index.html">home</a></li>
+        <li class="uppercase hover:font-bold"><a href="menu.html">menu</a></li>
+        <li class="uppercase font-bold"><a href="cater.html">cater</a></li>
+        <li class="uppercase hover:font-bold"><a href="faq.html">faqs</a></li>
+        <li class="uppercase hover:font-bold"><a href="career.html">career</a></li>
+      </ul>
+
+      <ul>
+        <li class="uppercase" id="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="index.html">home</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="menu.html">menu</a></li>
+        <li class="uppercase font-bold tooSmall"><a href="cater.html">cater</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="faq.html">faqs</a></li>
+        <li class="uppercase hover:font-bold tooSmall"><a href="career.html">career</a></li>
+        <i class="fa-solid fa-bars tooBig" id="option" ></i>
+      </ul>
+    </nav>
+
+  </header>
+  <!-- end of nav bar --> 
+  <!-- section header -->
+   
+  <section class="caterHeading heading">
+    <p class="text-5xl text-center heading1 pt-10 pb-10 uppercase">Chow Down on Victory Everywhere.</p>
+  </section>
+  <section class="banner">
+
+    <img src="images/banner.jpeg" alt="Score Big at Game Day Grill Banner">
+  </section>
+  <!--section body info-->
+  <section class="highlights pt-10 pb-10 ">
+    <p class="text-3xl text-center uppercase subheading pt-5 pb-5">For All Celebrations</p>
+    <div class="cardHighlights pt-2 pb-10">
+      <div class="card   cardCater">
+        <br>
+        <img src="images/complimentary.png" alt="cater logos" class="">
+        <p class="text-center font-bold pt-1 text-lg">Outdoors</p>
+        <ul class=" font-light text-zinc-500 pt-2 text-center">
+          <li>Tailgates</li>
+          <li>Festivals</li>
+          <li class="pb-5">Graduations</li>
+        </ul>
+      </div>
+      <div class="card  cardCater">
+        <br>
+        <img src="images/EVENTCATERING.png" alt="cater logos">
+        <p class="text-center font-bold font-lg pt-2 text-lg">Businesses</p>
+        <ul class=" font-light text-zinc-500  pt-2 text-center">
+          <li>Holiday Parties</li>
+          <li>Office Meetings</li>
+          <li class="pb-5">Employee Appreciations</li>
+        </ul>
+      </div>
+      <div class="card   cardCater">
+        <br>
+        <img src="images/BCATERING.PNG" alt="cater logos">
+        <p class="text-center font-bold font-lg pt-2 text-lg">Parties</p>
+        <ul class=" font-light text-zinc-500 pt-2 text-center">
+          <li>Weddings</li>
+          <li>Reunions</li>
+          <li class="pb-5">Birthday Parties</li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+   
+  <!-- cater highlights -->
+  <section class="highlightSection">
+    
+    <p class="text-3xl uppercase pt-5 subheading text-center pb-5">Cater Higlights</p>
+    <div class="flex  caterHighlights pb-2 border-2">
+      <div class="pr-2 pl-2">
+        <p class="font-bold pt-2 text-xl">Individual Meals</p>
+        <p class="font-light text-zinc-400">Individual Meals allows for each guest to have their personal lunchbox.</p>
+        <p class="font-light text-zinc-400 italic pb-2">Applicable for events under 50 attendees.</p>
+         <div class="pl-2"><button type="button" class=" py-2 px-4 rounded border">Call Us Today: XXX-XXX-XXXX</button></div>
+      </div>
+      <img src="images/TendersLong.png" class='pb-2 pt-2 pr-2'>
+    </div>
+    <br>
+    <br>
+    <div class="flex  caterHighlights  pb-2 border-2">
+      <div class="pr-2 pl-2">
+        <p class="font-bold pt-2 text-xl">Creation Station</p>
+        <p class="font-light text-zinc-400 pb-2">Sandwiches, meats, & sides; Buffet-style. Made to fit your preferences.</p>
+          <div class="pl-2"><button type="button" class=" py-2 px-4 rounded border">Call Us Today: XXX-XXX-XXXX</button></div>
+      </div>
+      <img src="images/BurgerLong.png" class="pb-2 pt-2 pr-2" >
+    </div>
+    <br>
+    <br>
+  </section>
+  <!-- delivery details --> 
+  <br>
+  <section class="pt-10">
+    <p class="text-3xl text-center uppercase  subheading">Delivery Details</p>
+    <div class="cardHighlights">
+      <div class="caterCard">
+        <img src="images/DollarMoney.PNG" alt="dollar symbol" id="dollar">
+        <br>
+        
+        <p class="font-light text-center text-zinc-400 pt-2">$100 MINIMUM FOR CATERING ORDERS</p>
+      </div>
+      <div class="caterCard">
+        <img src="images/clock.png" alt="clock">
+        <p class="font-light text-center text-zinc-400">ORDERS MUST BE PLACED BY 11:00 AM FOR NEXT DAY (only valid for less than 20)</p>
+      </div>
+      <div class="caterCard">
+         <img src="images/Chafing.png" alt="chafing kit">
+        <p class="font-light text-center text-zinc-400">COMPLIMENTARY CHAFING KIT (upon request)</p>
+      </div>
+    </div>
+    <br>
+  </section>
+  <br>
+  <!-- footer --> 
+  <footer class=" pt-10">
+    <div class="infoFooter flex px-5">
+      <div class="days ">
+        <ul>
+          <li class="font-bold">Business Hours:</li>
+          <li><span class="font-bold">Mon-Thurs:</span> 11:00 AM - 9:00 PM</li>
+          <li><span class="font-bold">Fri-Sat:</span> 11:00 AM - 12:00 PM</li>
+        </ul>
+      </div>
+      <div class="contact pl-5 pr-5">
+        <ul>
+          <li class="font-bold">Contact Us:</li>
+          <li> <i class="fa-solid fa-phone"></i> XXX-XXX-XXXX</li>
+          <li><i class="fa-solid fa-envelope"></i> customer@gamedaygrill.com</li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+
+          <li><i class="fa-brands fa-instagram"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-twitter"></i> @gamedaygrill</li>
+          <li> <i class="fa-brands fa-facebook"></i> @gamedaygrill</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ada flex">
+      <a href="ada.html">ADA Statement</a>
+    </div>
+    <p class="text-xs text-center pt-2">Designed by Melissa Ortiz, Asha Rountree & Developed by Imaan Dadabhoy 2023-2024.</p> 
+    <p class="text-xs text-center">Theme: Game Day Grill, Chapter 02-0905 James Bowie High School Austin TX.</p>
+  </footer>
+  
+  <script src="menuscript.js"></script>
+</body>
+</html>
