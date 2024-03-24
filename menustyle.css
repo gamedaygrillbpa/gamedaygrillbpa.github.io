@@ -252,8 +252,11 @@ footer{
 }
 
 .infoFooter{
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem), 1fr)); 
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
   margin:auto;
   padding-bottom: 5px;
 }
